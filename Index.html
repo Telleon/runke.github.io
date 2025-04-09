@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Psychedelic Band Page</title>
+
+  <!-- Orbitron font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+  <style>
+    
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #ccc;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 60px;
+    }
+
+    
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      height: 100px;
+    }
+
+    
+    .intro {
+      margin-top: 140px;
+      text-align: center;
+    }
+
+    
+    .intro h1 {
+      font-size: 32px;
+      margin: 0;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    
+    .intro p {
+      font-size: 16px;
+      color: #aaa;
+      max-width: 600px;
+      margin: 10px auto 30px;
+    }
+
+    
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      justify-items: center;
+    }
+
+    
+    .gallery-item {
+      text-align: center;
+    }
+
+    
+    .gallery-item img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 12px;
+      background-color: #333;
+      border: 2px solid #444;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    
+    .gallery-item p {
+      font-size: 14px;
+      color: #aaa;
+      margin: 0;
+    }
+
+    
+    .description {
+      margin-top: 60px;
+      max-width: 600px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.5);
+      background-color: transparent;
+      pointer-events: none;
+      transform: translateY(0);
+      transition: transform 0.3s ease-out;
+    }
+
+  </style>
+</head>
+<body>
+
+  
+  <img src="Screenshot 2025-04-09 052413.png" alt="Logo" class="logo" />
+
+  
+  <div class="intro">
+    <h1>Who is "RUNKE"?</h1>
+    <p>We (Runke) are an alternative rock band from the humble hick town of Cullman, Alabama. As much as we'd like to leave this forementioned town, we cannot. We are great for parties, birthdays, or your local bar! contact info is provided below.</p>
+  </div>
+
+  
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/150" alt="Guitarist/Keyboard player" />
+      <p>DANE</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/150" alt="Rhythm Guitarist" />
+      <p>DEYTAN</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/150" alt="Bass Guitarist" />
+      <p>LUCAS</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/150" alt="Percussionist/Drummer" />
+      <p>DYLAN</p>
+    </div>
+  </div>
+
+  
+  <div class="description">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl in bibendum blandit, sapien dolor placerat orci, sit amet varius libero nisi ut nulla.</p>
+    <p>Phasellus nec ex nec justo fermentum vulputate. Aenean posuere, sapien nec dapibus efficitur, tellus neque suscipit purus, non consequat tortor nulla nec lacus.</p>
+  </div>
+
+  
+  <div class="footer" id="footer">
+    1722 Northwood Dr Nw Cullman, Alabama 35058 · RunkeNation@Gmail.com · +1 (256) 339 3279
+  </div>
+
+  
+  <script>
+    window.addEventListener('scroll', function() {
+      const footer = document.getElementById('footer');
+      const scrollPosition = window.scrollY;
+      const lagAmount = scrollPosition * 0.2; // Adjust this for more/less lag
+      footer.style.transform = `translateY(${lagAmount}px)`;
+    });
+  </script>
+
+</body>
+</html>
